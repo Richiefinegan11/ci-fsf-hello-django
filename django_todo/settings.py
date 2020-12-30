@@ -9,9 +9,9 @@ https://docs.djangoproject.com/en/3.1/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/3.1/ref/settings/
 """
+from pathlib import Path
 import os
 import dj_database_url
-from pathlib import Path
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -85,9 +85,6 @@ WSGI_APPLICATION = 'django_todo.wsgi.application'
 DATABASES = {
     'default': dj_database_url.parse('postgres://xswnvipmfwodno:8a7ee5624f7db1a3d954020d33d129d3e47881bb6cb64ba4a983674c737c9e0e@ec2-52-2-82-109.compute-1.amazonaws.com:5432/d145f1rosfm9bl')
 }
-
-
-
 
 # Password validation
 # https://docs.djangoproject.com/en/3.1/ref/settings/#auth-password-validators
